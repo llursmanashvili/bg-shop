@@ -14,8 +14,10 @@ import toy from "./imgscard/toy.jpg";
 import innovate from "./imgscard/innovate.jpg";
 import mobile from "./imgscard/mobile.jpg";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
 
-export default function cards() {
+export default function Cards() {
   const cardinfo = [
     {
       image: tech,
@@ -58,27 +60,46 @@ export default function cards() {
       link: "/toy",
     },
   ];
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
   return (
     <div className="cards">
-      {cardinfo.map((card, index) => {
-        return (
-          <Link key={index} to={card.link}>
-            <Card className="card">
-              <CardActionArea>
-                <CardMedia
-                  className="photo"
-                  component="img"
-                  image={card.image}
-                  alt="photo"
-                />
-                <CardContent>
-                  <Typography>{card.title}</Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Link>
-        );
-      })}
+      {loading ? (
+        <ClipLoader
+          color="#f2ff00"
+          loading={loading}
+          size={150}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      ) : (
+        <div className="cards1">
+          {cardinfo.map((card, index) => {
+            return (
+              <Link key={index} to={card.link}>
+                <Card className="card">
+                  <CardActionArea>
+                    <CardMedia
+                      className="photo"
+                      component="img"
+                      image={card.image}
+                      alt="photo"
+                    />
+                    <CardContent>
+                      <Typography>{card.title}</Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Link>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

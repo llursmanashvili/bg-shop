@@ -1,12 +1,21 @@
-.cards{ 
+.cards1{ 
     justify-content: center;
     display:flex;
     flex-wrap: wrap;
       text-decoration: dashed;
     align-items: center;
+    margin-top: 40px;
 
 }
+.cards{ 
+  justify-content: center;
+  display:flex;
+  flex-wrap: wrap;
+    text-decoration: dashed;
+  align-items: center;
+  margin-top: 30px;
 
+}
 .card{
        border-radius: 20px;
        align-items: flex-end;

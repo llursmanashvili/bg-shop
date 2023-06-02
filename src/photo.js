@@ -4,7 +4,7 @@ import bg0 from "./photobanner/2.jpeg";
 import bg from "./photobanner/3.jpg";
 import bg1 from "./photobanner/bg1.jpeg";
 import bg2 from "./photobanner/bg2.jpeg";
-import bg3 from "./photobanner/bg3.jpeg";
+import bg15 from "./photobanner/bg3.jpeg";
 import bg4 from "./photobanner/bg6.jpeg";
 import bg5 from "./photobanner/bg7.jpeg";
 import bg6 from "./photobanner/bg8.jpeg";
@@ -16,7 +16,8 @@ import bg11 from "./photobanner/bg16.jpeg";
 import bg12 from "./photobanner/bg17.jpeg";
 import bg13 from "./photobanner/bg18.jpeg";
 import bg14 from "./photobanner/bg19.jpeg";
-import bg15 from "./photobanner/bg20.jpeg";
+import bg3 from "./photobanner/bg20.jpeg";
+import "./photo.css";
 
 function Photo() {
   const photos = [
@@ -47,7 +48,7 @@ function Photo() {
             <Carousel.Item key={i}>
               <img
                 key={i}
-                className="d-block w-100 h-50 mt-2"
+                className="firstphoto"
                 src={photo.image}
                 alt="First slide"
               />
