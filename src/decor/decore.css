@@ -1,7 +1,8 @@
 .decor3{ 
     justify-content: center;
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    
     
     transition: box-shadow .3s;
 

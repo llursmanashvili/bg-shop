@@ -30,6 +30,11 @@ import decore26 from "./imgsdecore/decore26.jpeg";
 import decore27 from "./imgsdecore/decore27.jpeg";
 import decore28 from "./imgsdecore/decore30.jpeg";
 import decore29 from "./imgsdecore/decore31.jpeg";
+import decore30 from "./imgsdecore/decore32.jpeg";
+import decore31 from "./imgsdecore/decore33.jpeg";
+import decore32 from "./imgsdecore/decore34.jpeg";
+import decore33 from "./imgsdecore/decore35.jpeg";
+import decore34 from "./imgsdecore/decore36.jpeg";
 
 const decorecardinfoi = [
   {
@@ -257,6 +262,43 @@ const decorecardinfoi = [
     price: "19 ლარი",
     desc: "",
     image: decore29,
+  },
+  {
+    link: "37",
+    title: "თეთრი ცხენი",
+    price: "69 ლარი",
+    desc: "",
+    image: decore30,
+  },
+  {
+    link: "38",
+    title: "შავი ცხენი",
+    price: "69 ლარი",
+    desc: "",
+    image: decore31,
+  },
+  {
+    link: "39",
+    title: "გოგონა წიგნით ხელში",
+    price: "89 ლარი",
+    desc: "",
+    image: decore32,
+  },
+  {
+    link: "40",
+    title: "სანათი",
+    price: "65 ლარი",
+    desc: "პატარა სანათი-65ლარი | დიდი სანათი-99ლარი",
+    desc1: "მასალა:მეტალი | ფერი:მწვანე",
+    image: decore33,
+  },
+  {
+    link: "41",
+    title: "სანათი",
+    price: "60 ლარი",
+    desc: "პატარა სანათი-60ლარი | დიდი სანათი-89ლარი",
+    desc1: "მასალა:მეტალი | ფერი:ნაცრისფერი",
+    image: decore34,
   },
 ];
 export default decorecardinfoi;

@@ -29,6 +29,8 @@ import toy33 from "./imgstoy/toy33.jpeg";
 import toy34 from "./imgstoy/toy34.jpeg";
 import toy35 from "./imgstoy/toy35.jpeg";
 import toy38 from "./imgstoy/toy38.jpeg";
+import toy39 from "./imgstoy/toy39.jpeg";
+import toy40 from "./imgstoy/toy40.jpeg";
 
 const toycardinfoi = [
   {
@@ -249,6 +251,22 @@ const toycardinfoi = [
     title: "მოტოციკლი",
     price: "27 ლარი",
     image: toy38,
+  },
+
+  {
+    desc: "",
+    link: "35",
+    title: "საბავშვო სავარძელი",
+    price: "35 ლარი",
+    image: toy39,
+  },
+
+  {
+    desc: "",
+    link: "36",
+    title: "ბუდე ჩიტუნებისთვის",
+    price: "25 ლარი",
+    image: toy40,
   },
 ];
 export default toycardinfoi;

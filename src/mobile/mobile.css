@@ -1,14 +1,8 @@
 .mobile{ 
     justify-content: center;
     display:flex;
-    flex-wrap: wrap;
-
-    
-    transition: box-shadow .3s;
-
-  
-    
-    
+    flex-wrap: wrap-reverse;
+    transition: box-shadow .3s;   
 }
 .mobileprice{
     color: rgb(214 78 78);
